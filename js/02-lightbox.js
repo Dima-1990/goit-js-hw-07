@@ -13,21 +13,11 @@ const galleryMarkup = galleryItems
 
 myGalleryUlEl.innerHTML = galleryMarkup;
 
-let lightbox = null;
 
-myGalleryUlEl.addEventListener("click", onClick);
-
-function onClick(e) {
-  e.preventDefault();
-
-  if (!lightbox) {
     lightbox = new SimpleLightbox(".gallery a", {
       sourceAttr: "href",
       captionDelay: 250,
       captionSelector: "img",
       captionsData: "alt",
     });
-  }
-
-  lightbox.open();
-}
+ 
