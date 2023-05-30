@@ -14,7 +14,7 @@ const galleryMarkup = galleryItems
 myGalleryUlEl.innerHTML = galleryMarkup;
 
 
-    lightbox = new SimpleLightbox(".gallery a", {
+   let   lightbox = new SimpleLightbox(".gallery a", {
       sourceAttr: "href",
       captionDelay: 250,
       captionSelector: "img",
